@@ -9,6 +9,7 @@ does not need it until a consumer stores non-essential state.
 
 - config: `$XDG_CONFIG_HOME` if set and absolute, else `$HOME/.config`
 - data: `$XDG_DATA_HOME` if set and absolute, else `$HOME/.local/share`
+- cache: `$XDG_CACHE_HOME` if set and absolute, else `$HOME/.cache`
 - runtime: `$XDG_RUNTIME_DIR` must be set and absolute
 
 There is no `/run/user/<uid>` fallback, no `/tmp` fallback, and no `~`
