@@ -18,9 +18,9 @@ expansion. Relative or empty XDG values are errors.
 `ConfigDirs` is enough for tools that only need config/data.
 `BaseDirs` also requires runtime.
 
-This public repo exists so packaged tools can git-depend on the crate.
-hypr-commons is private. crates.io publish waits on a registry token.
+Published from CI on a `v*` tag (`CARGO_REGISTRY_TOKEN` org secret). Do not
+`cargo publish` from a laptop.
 
 ```toml
-hypr-paths = { git = "https://github.com/MasonRhodesDev/hypr-paths", rev = "<sha>" }
+hypr-paths = "0.1.0"
 ```
