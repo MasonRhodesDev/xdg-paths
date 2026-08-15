@@ -2,6 +2,11 @@
 
 Fail-closed XDG config, data, and runtime paths for the hypr suite.
 
+XDG Base Directory is the current Wayland/freedesktop path contract
+(`$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY` is the compositor socket). It is not
+an X11 leftover. `XDG_STATE_HOME` is the only later sibling; this crate
+does not need it until a consumer stores non-essential state.
+
 - config: `$XDG_CONFIG_HOME` if set and absolute, else `$HOME/.config`
 - data: `$XDG_DATA_HOME` if set and absolute, else `$HOME/.local/share`
 - runtime: `$XDG_RUNTIME_DIR` must be set and absolute
