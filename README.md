@@ -1,6 +1,6 @@
-# hypr-paths
+# xdg-paths
 
-Fail-closed XDG config, data, and runtime paths for the hypr suite.
+Fail-closed XDG config, data, cache, and runtime paths.
 
 XDG Base Directory is the current Wayland/freedesktop path contract
 (`$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY` is the compositor socket). It is not
@@ -22,5 +22,5 @@ Published from CI on a `v*` tag (`CARGO_REGISTRY_TOKEN` org secret). Do not
 `cargo publish` from a laptop.
 
 ```toml
-hypr-paths = "0.1.0"
+xdg-paths = "0.2.0"
 ```

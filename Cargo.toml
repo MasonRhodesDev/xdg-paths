@@ -1,10 +1,10 @@
 [package]
-name = "hypr-paths"
-version = "0.1.0"
+name = "xdg-paths"
+version = "0.2.0"
 edition = "2021"
 license = "MIT"
-description = "Fail-closed XDG config/data/runtime paths for the hypr suite"
-repository = "https://github.com/MasonRhodesDev/hypr-paths"
+description = "Fail-closed XDG config/data/cache/runtime paths; no /tmp or /run/user fallbacks"
+repository = "https://github.com/MasonRhodesDev/xdg-paths"
 publish = true
 
 [dependencies]
